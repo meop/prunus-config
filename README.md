@@ -13,10 +13,10 @@ cfg/
 
 ## Usage
 
-Profiles are enabled per-vault via symlinks. Use the MCP tools `enable_profile` / `disable_profile` from within a client session, or create symlinks manually:
+Profiles are enabled per-tree via symlinks. Use the MCP tools `enable_profile` / `disable_profile` from within a client session, or create symlinks manually:
 
 ```sh
-ln -s /path/to/prunus-config/cfg/profiles/software-architect.md /path/to/vaults/code/.profiles/software-architect.md
+ln -s /path/to/prunus-config/cfg/profiles/software-architect.md /path/to/grove/tree/.profiles/software-architect.md
 ```
 
 The server combines all enabled profiles' `## Capture` and `## Skip` sections and injects them into the LLM extraction prompt.
